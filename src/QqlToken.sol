@@ -5,14 +5,12 @@ import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 
 contract QqlToken is ERC20, Ownable{
-    uint8 internal constant DECIMAL = 18;
+    string public constant NAME = "Qql Token";
+    string public constant SYMBOL = "QQL";
 
-    constructor(string memory name, string memory symbol, address initialOwner, uint256 totalSupply) 
-        ERC20(name, symbol)
-        Ownable(initialOwner)
-    {
-
-    }
+    constructor(address initialOwner) 
+        ERC20(NAME, SYMBOL)
+        Ownable(initialOwner){}
 
     function mint(address to,uint256 amount) external onlyOwner{
         require(to != address(0), "Zero address");

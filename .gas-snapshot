@@ -1,0 +1,7 @@
+CounterTest:testFuzz_SetNumber(uint256) (runs: 256, μ: 32043, ~: 32354)
+CounterTest:test_Increment() (gas: 31851)
+TestERC721Token:testMint() (gas: 129970)
+TestERC721Token:testMintMul() (gas: 129848)
+TestFault:testDropAccount() (gas: 144629)
+TestFault:testDropWallet() (gas: 142256)
+TestQqlToken:testTotalSupply() (gas: 60241)

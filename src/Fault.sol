@@ -4,7 +4,7 @@ pragma solidity ^0.8.20;
 
 import { QqlToken } from "./QqlToken.sol";
 import { IERC20 } from "@openzeppelin/contracts/token/ERC20/IERC20.sol";
-
+import { Strings } from "@openzeppelin/contracts/utils/Strings.sol";
 contract Fault {
     mapping(address account => uint256) records;   //记录账号数量
     mapping(address account => uint256) lastClaimTime;  //记录上次领水时间
